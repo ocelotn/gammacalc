@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'FolksLightRegular';
+    src: url('fonts/Folks-Light-webfont.eot');
+    src: url('fonts/Folks-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Folks-Light-webfont.woff') format('woff'),
+         url('fonts/Folks-Light-webfont.ttf') format('truetype'),
+         url('fonts/Folks-Light-webfont.svg#FolksLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header,nav,article,footer,section,aside,figure,figcaption{display:block}
+
+
+body,h1,h2,h3,h4,h5,h6,td {
+	font-size:1em;
+	font-weight:normal;
+	margin: 0px; 
+	padding: 0px;
+	border: 0px;
+}         
+ul,ol,li,h1,h2,h3,h4,h5,h6,form,html,p,input,label,div,dd,dt,dl,table,tr,td,img,hr {
+    margin:0; padding:0;
+}
+
+body {
+	background-color: #FFF;
+	color:#C4B38B; 
+	padding: 0em 6em;
+}
+a { 
+	text-decoration: none; 
+	color:#FFB900;
+}
+a:visited {
+	color:#C4B38B;
+}
+
+hgroup {	color: #FFB900; }
+header {
+	padding: 5em 2em 0em 0em;
+	margin-bottom: 4em;
+}
+header h2 {
+	font: 30px 'FolksLightRegular', Arial, sans-serif;letter-spacing: 0;
+	font: 30px/34px 'FolksLightRegular', Arial, sans-serif;letter-spacing: 0;
+}
+header ul {
+	margin-top: 1em;
+	list-style-type: none;
+}
+header li {
+	display: inline;
+	margin: 0;
+	padding: 0.4em;
+	font-family: 'FolksLightRegular', Arial, sans-serif;	
+}
+header li:first-child {padding-left: 0;}
+
+table {
+	margin: 0% 15%;
+}
+th, td {
+text-align: left;
+padding: 1em 1.8em;
+}
+th {font-weight: normal;}
+td a {color:#360C0C;}
+th:first-child {padding: 0em; border: none;}
+td:first-child {
+	text-align: center;
+	padding: 0em 1.3em;
+	font-family: 'FolksLightRegular', Arial, sans-serif;
+	border: 1px solid #FFB900;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+td:first-child a{color: #FFB900;}
+
+footer {padding: 2em 0em;}
+footer a{color: #C4B38B;}
+
+/* For smaller windows, squish things up a bit */
+body.smaller {padding: 0em 3em;}
+.smaller header {padding:3em 1em 0em 0em; margin: 0;}
+.smaller li{padding: 0em;}
+.smaller header li:before{content: " - ";}
+.smaller header li:first-child:before{content:"";}
+
+.smaller td{padding: 0.3em 0.7em;}
+.smaller td:first-child, .smaller th:first-child{padding: 0em 0.5em;}
+.smaller th:nth-child(4), .smaller td:nth-child(4) {display: none;}
+
+ul.int {margin: 20px;}
+.int input{
+width: 30px;
+color:#360C0C;
+}
+
+.int li{
+display: inline;
+list-style-type:none;
+}
+h2.int { margin: 10px; padding: 20px 10px 0px 10px;}
+textarea {border: none; min-height: 50px; padding: 15px 15px; margin: 50px 20px; color:#360C0C}

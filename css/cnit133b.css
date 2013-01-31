@@ -1,0 +1,46 @@
+@import url("cnit133base.css");
+
+body {
+	background-color: #000;
+	color:#C4B38B; 
+}
+a { 
+	color:#FFB900;
+}
+a:visited {
+	color:#C4B38B;
+}
+
+hgroup {	color: #FFB900; }
+header {
+	color: #FFB900; 
+}
+
+td a {color:#360C0C;}
+
+td:first-child a{border: 1px solid #FFB900;}
+
+footer a{color: #C4B38B;}
+
+.int input{
+color:#360C0C;
+}
+
+textarea {
+color:#360C0C
+}
+
+.int li{
+display: inline;
+list-style-type:none;
+}
+header li{
+display: inline;
+list-style-type:none;
+}
+
+li{
+display: inline;
+list-style-type:none;
+}
+

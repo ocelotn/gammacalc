@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+   	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="cnit133mb.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="scripts/hw1.js"></script>
+	<script type="text/javascript" src="gamma2.js"></script>
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="cnit133base.css"/>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <title>Gamma World Attacks</title>
+<style>
+p {margin: 20px;}
+.button { display: inline-block; padding: 5px 10px; margin: 10px; border: 1px solid green;  }
+.trouble {color: red;}
+select.trouble {background-color: green;}
+div#a {float: left;}
+div#b {margin: 30px 0px; float: left;}
+footer {float: left; clear: both;}
+#b h2 {font-size: large; font-weight: bold; color: #FFB900;}
+#a h2 {font-size: large; font-weight: bold; color: #FFB900;}
+</style>
+</head>
+<body onload='smallify();'>
+
+<header>
+<hgroup>
+<h2>Gamma World Attack Calculator</h2>
+</hgroup>
+</header>
+
+<div id='homework'>
+
+<noscript><h2>Please enable javascript to use this page.</h2></noscript>
+
+<form id="inputs" method="POST" action="#">
+
+<div id="a">
+<h2>Stats</h2>
+	
+<table id="stats"><tbody>
+<tr><td>Strength</td><td><input size="3" type="text" name="str" value="16"></input></td></tr>
+<tr><td>Constitution</td><td><input size="3" type="text" name="con" value="11"></input></td></tr>
+<tr><td>Dexterity</td><td><input size="3" type="text" name="dex" value="9"></input></td></tr>
+<tr><td>Intelligence</td><td><input size="3" type="text" name="intelligence" value="15"></input></td></tr>
+<tr><td>Wisdom</td><td><input size="3" type="text" name="wis" value="12"></input></td></tr>
+<tr><td>Charisma</td><td><input size="3" type="text" name="cha" value="18"></input></td></tr>
+
+</tbody></table>
+
+<p>Level <input size="3" type="text" name="level" id="level" value="4" style="text-align: right;"></input></p>
+<p>
+Armor 
+<select name="armor" id="armor">
+<option value="none" id="noarmor" />No Armor</option>
+<option value="light" id="lightarmor" />Light Armor</option>
+<option value="heavy" id="heavyarmor" selected="selected" />Heavy Armor</option>
+</select>
+<p>
+<p>
+ Shield <input type="checkbox" name="shield" id="shield" value="shield" checked="checked"/>
+ Silly Hat <input type="checkbox" name="hat" id="hat" value="hat" />
+ </p>
+
+<p>
+<select name="wweight">
+<option value="" id="emptychoice" />Choose Weight:</option>
+<option value="lightw" id="lightw" />Light</option>
+<option value="heavyw" id="heavyw" selected="selected"/>Heavy</option>
+</select>
+
+<select name="hands">
+<option value="1" id="1h" selected="selected"/>1 Handed</option>
+<option value="2" id="2h" />2 Handed</option>
+</select>
+
+<select name="wtype">
+<option value="melee" id="melee" selected="selected"/>Melee</option>
+<option value="ranged" id="ranged" />Ranged</option>
+<option value="gun" id="gun" />Gun</option>
+</select>
+</p>
+
+<ul class="int">
+<li><input type="radio" name="power"  id="power" value="none" />None</li>
+<li><input type="radio" name="power"  id="rage" value="rage" checked="checked"/>Ape Rage</li>
+<li><input type="radio" name="power"  id="leap" value="leap" />Monkey Leap</li>
+<li><input type="radio" name="power"  id="leaprage" value="leaprage" />Monkey Leap + Ape Rage</li>
+<li><input type="radio" name="power"  id="psiassault" value="psiassault" />Psychic Assault</li>
+</ul>
+
+<ul class="int">
+<li><input type="checkbox" name="flanking" id="flanking" value="flanking"/>Flanking</li>
+<li><input type="checkbox" name="oprone" id="oprone" value="oprone"/>Enemy Prone</li>
+<li><input type="checkbox" name="oblood" id="oblood" value="oblood"/>Enemy Bloodied</li>
+<li><input type="checkbox" name="uprone" id="uprone" value="uprone"/>You are Prone</li>
+<li><input type="checkbox" name="adjacent" id="adjacent" value="adjacent"/>Adjacent</li>
+<li><input type="checkbox" name="advantage" id="advantage" value="advantage"/>Other Combat Advantage</li>
+</ul>
+
+<ul class="int">
+<li><input type="checkbox" name="run" id="run" value="run"/>Running</li>
+</ul>
+<input type="submit" name="calculate"  value="Calculate!" />
+<input type="reset" name="myreset" value="Start over!" />
+
+
+<table id="results"></table>
+
+</div>
+
+</form>
+
+</div>
+
+<footer>
+<p><a href="http://validator.w3.org/check?uri=referer">Validate Markup</a>, 
+<a href="	http://jigsaw.w3.org/css-validator/check/referer?profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=true&amp;lang=en&amp;uri=referer">Validate CSS</a></p>
+<p onclick='togglesheet();'>Toggle Style</p>
+</footer>
+</body>
+</html>

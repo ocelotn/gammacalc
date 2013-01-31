@@ -1,0 +1,84 @@
+/* 	
+	Auth: Lara Ortiz de Montellano 
+  	For CNIT133 Spring 2012
+  	last modified  February 3, 2012
+*/
+
+@import url("cnit133base.css");
+
+body {
+	background-color: #000;
+	color:#C4B38B; 
+}
+a { 
+	color:#FFB900;
+}
+a:visited {
+	color:#C4B38B;
+}
+
+hgroup {	color: #FFB900; }
+header {
+	color: #FFB900; 
+}
+
+td a {color:#FFB900;}
+
+/*td:first-child a{border: 1px solid #FFB900;}*/
+
+footer a{color: #C4B38B;}
+
+.int input{
+color:#360C0C;
+}
+
+textarea {
+color:#360C0C
+}
+
+
+table.int {
+	color: #360C0C;
+	background-color: #C4B38B;
+	}
+table.int tr {
+	background-color: #F8F7CF;
+	border: 1px solid #C4B38B;
+}
+.int th {
+	background-color: #C4B38B;
+}
+
+
+#currency thead tr:first-child th {color: #360C0C;}
+#currency thead tr:nth-child(2) th {color: #360C0C;}
+#currency thead tr:nth-child(3) th {color: #F8F7CF;}
+
+.int a:visited {color: green;}
+.validated a:visited {color: green;}
+
+.answer {
+/*	background-color: #C4B38B; 
+	color: #360C0C;
+*/
+	color: white;
+	font-size: large;
+}
+
+/*
+table.int {
+	color: #360C0C;
+	background-color: #C4B38B;
+	}
+table.int tr {
+	background-color: #F8F7CF;
+	border: 1px solid #C4B38B;
+}
+.int th {
+	background-color: #C4B38B;
+}
+
+
+#currency thead tr:first-child th {color: #360C0C;}
+#currency thead tr:nth-child(2) th {color: #F8F7CF;}
+*/

@@ -1,0 +1,134 @@
+li {display: inline;}
+
+@font-face {
+    font-family: 'FolksLightRegular';
+    src: url('fonts/Folks-Light-webfont.eot');
+    src: url('fonts/Folks-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Folks-Light-webfont.woff') format('woff'),
+         url('fonts/Folks-Light-webfont.ttf') format('truetype'),
+         url('fonts/Folks-Light-webfont.svg#FolksLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6,td {
+	font-size:1em;
+	font-weight:normal;
+	margin: 0px; 
+	padding: 0px;
+	border: 0px;
+}         
+ul,ol,li,h1,h2,h3,h4,h5,h6,form,html,p,input,label,div,dd,dt,dl,table,tr,td,img,hr {
+    margin:0; padding:0;
+}
+
+body {
+	padding: 0em 6em;
+}
+a { 
+	text-decoration: none; 
+}
+
+header {
+	padding: 5em 2em 0em 0em;
+	margin-bottom: 4em;
+}
+header h2 {
+	font: 30px 'FolksLightRegular', Arial, sans-serif;letter-spacing: 0;
+	font: 30px/34px 'FolksLightRegular', Arial, sans-serif;letter-spacing: 0;
+}
+header ul {
+	margin-top: 1em;
+	list-style-type: none;
+}
+header li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0.4em;
+	font-family: 'FolksLightRegular', Arial, sans-serif;	
+}
+header li:first-child {padding-left: 0;}
+
+table {
+	margin: 0% 15%;
+}
+th, td {
+text-align: left;
+padding: 1em 1.8em;
+}
+th {font-weight: normal;}
+th:first-child {padding: 0em; border: none;}
+td:first-child {
+	text-align: center;
+	padding: 0em 1.3em;
+	font-family: 'FolksLightRegular', Arial, sans-serif;
+	border: 1px solid #FFB900;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+
+footer {padding: 2em 0em;}
+
+/* For smaller windows, squish things up a bit */
+body.smaller {padding: 0em 3em;}
+.smaller header {padding:3em 1em 0em 0em; margin: 0;}
+.smaller li{padding: 0em;}
+.smaller li:before{content: " - ";}
+.smaller li:first-child:before{content:"";}
+
+.smaller td{padding: 0.3em 0.7em;}
+.smaller td:first-child, .smaller th:first-child{padding: 0em 0.5em;}
+.smaller th:nth-child(4), .smaller td:nth-child(4) {display: none;}
+
+ul.int {margin: 20px;}
+
+.int input{width: 30px;}
+
+.int li{
+display: inline;
+list-style-type:none;
+}
+h2.int { margin: 10px; padding: 20px 10px 0px 10px;}
+
+.validated {
+	border: 1px solid #C4B38B;
+	background-color: #C4B38B;
+}
+.trouble {
+	color: red;
+}
+li.trouble{
+	border: 3px solid red;
+	background-color: #FFF:
+	}
+
+textarea {border: none; padding: 15px 15px; margin: 50px 20px;}
+
+table.int {
+padding: 0px; 
+margin: 20px 0px; 
+border: none; 
+border-spacing: 0px; 
+border-collapse: collapse;
+}
+
+table.int tr {padding 0px;}
+
+table.int th {
+text-align: center; 
+padding: 8px; 
+}
+
+table.int th:first-child {padding: 8px;}
+
+table.int td {
+text-align: right;
+padding: 2px 8px; 
+margin: 0px; 
+border: none; 
+border-spacing: 0px; 
+border-collapse: collapse;
+border-radius: 0;
+-moz-border-radius: 0;
+}
